@@ -12,8 +12,12 @@ Chegando para ser seu novo método de transporte para e da faculdade, o PUC Lift
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* João Caram Santos de Oliveira
+* Marta Dias Moreira Noronha
+
+## Informações uteis
+
+* Link para o Trello do projeto - https://trello.com/b/HhOgxirK/puc-lift-team
 
 ## Instruções de utilização
 
