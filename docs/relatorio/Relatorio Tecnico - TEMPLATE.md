@@ -1,21 +1,19 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`PUC LIFT`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  UMA EQUIPE DO CURSO ......
 
-`CURSO` 
+`Sistemas de informação` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  Grupo ......
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+> Jean Carlo Machado Amaral
+> Ícaro Arruda de Mendonça
+> Henrique Candelori Mendes
+> João Arthur Rocha Leo Pereira
+> Miguel Sadi de Menezes
 
 # Estrutura do Documento
 
@@ -56,67 +54,53 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  Transporte, sempre um problema. ......
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
+> Transporte é, e sempre foi um dos maiores problemas na logistica da humanidade. Para tentar resolve-lo em grande escala, foi inventada desde a roda, até 
+> locomotivas gigantes e aviões últra tecnológicos. Mas, se pensarmos em algo em menor escala, como em uma universidade por exemplo, permanecemos por um
+> longo periodo parados no tempo. Para os que tem condições de comprar e manter, temos um carro, que na maioria das vezes transitará com apenas uma pessoa;
+> aqueles que não tem a condição, podem desfrutar do transporte público; cheio e desconfortável. Paralelo a isso, temos serviços como a Uber, que apesar
+> de confortaveis, tem ficado cada vez mais caros e inacessiveis. Mas... E se pudessemos conectar aqueles que sofrem com o desconforto dos transportes publicos,
+> ajudando um pouco aqueles que pagam caro em seus carros?
 >
 > **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+> - [Materias de validação uber](https://www.tecmundo.com.br/mercado/235327-99-uber-anunciam-reajuste-precos-aumento-gasolina.htm#:~:text=No%20caso%20da%20Uber%20foi,sem%20especificar%20exatamente%20até%20quando.)
+> - [Materiais de validação Transporte público](https://www.otempo.com.br/hotsites/a-revolucao-do-transito/capitulo-um/desde-os-tempos-do-bonde-mais-de-100-anos-de-insatisfacao-1.2488229)
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  Como resolveremos? ......
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
+> Como estudantes, não conseguimos fazer muito pelo macro, mas, parafraseando Ayrton Senna da Silva: "Seja a mudança que você quer ver no mundo". Então, baseado 
+> nisso, pensamos em um projeto apenas para a Puc, com capacidade de expansão, de um aplicativo, que permite que motoristas e passageiros da universidade que residem 
+> proximos uns aos outros se conectem por um preço acessivel baseado na gasolina, em uma relação benefica para as duas partes. Desta maneira, criaremos um sistemas de
+> carona, onde o passageiro viajará sem os problemas de um transporte público, e o motorista não desviará muito de sua rota, alem de ganhar uma ajuda de custo
+> e ter uma companhia em seu caminho pra casa.
 > 
 > **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+> - [Programa similar chamado Carona Solidária](https://www.transitomaisgentil.com.br/carona-solidaria-na-faculdade/)
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  Nossa dor é a dor do usuário ......
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
+> Em nossa equipe, temos um membro que tem problemas e já passou por traumas com transporte publico, deixando assim meios como Uber como sua unica opção de transporte
+> "viável". Além de nosso colega, coletamos várias entrevistas de alunos e funcionários da PUC em 2 turnos (Manhã e noite) e eles foram unanimes em dizer que estão
+> plenamente insatisfeitos com as diversas maneiras que se locomovem para casa. Assim, pensamos em nosso sistema de carona, que foi aprovado por todos os entrevistados. 
 > 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+> Fizemos 8 entrevistas em vídeo em 2 turos na PUC SG. No momento elas não estão publicadas, mas podem ser compiladas, editadas e postadas por requisição de um mentor.
+> Nestas entrevistas, 100% das pessoas que se alegam passageiras dizem ter problemas de algum grau com o transporte público.
+> Nestas entrevistas, quando apresentada a possibilidade de um app de carona, 100% dos motoristas e passageiros acharam a ideia positiva.
+> 
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+......  Revolucionando o transporte da PUC SG ......
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
+> Nosso publico alvo são: motoristas e passageiros insatisfetos com transporte público, alunos e funcionários da PUC SG. 
+> Pessoas educadas, mente aberta e que achem interessante a ideia de carona por um colega universitário.
+> Pessoas minimamente antenadas com tecnologia de qualquer idade.
+> Pessoas de toda classe social, com preferência em classes média e baixa, que tem mais possibilidade de querer economizar com transporte
 > 
 > **Links Úteis**:
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
