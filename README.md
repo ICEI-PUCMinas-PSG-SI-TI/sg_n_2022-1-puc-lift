@@ -18,6 +18,7 @@ Chegando para ser seu novo método de transporte para e da faculdade, o PUC Lift
 ## Informações uteis
 
 * Link para o Trello do projeto - https://trello.com/b/HhOgxirK/puc-lift-team
+* Link para a LOGO (jpeg) - https://imgur.com/a/EdJAzkT
 
 ## Instruções de utilização
 
