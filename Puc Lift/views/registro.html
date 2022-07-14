@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+      <div class="container-logo">
+        <div class="logo-imagem">
+          <a href="../views/home.html"> <img src="../pics/logo5050.png" alt="Logo"></a>
+        </div>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="../views/login.html">Já tem uma conta? </a></li>
+        </ul>
+      </div>
+  </header>
+    
+  <div class="login-page">
+    <div class="form">
+      <h1>Registrar</h1>
+    </br>
+      <p>Aqui será onde você coloca seus dados iniciais. Não será possivel alterar estes dados depois.</p>
+  </br>
+      <div id="formulario" class="login-form">
+        <input id="nome" type="text" placeholder="Nome"/>
+        <input id="matricula" type="text" placeholder="Matrícula"/>
+        <input id="email" type="text" placeholder="E-mail"/>
+        <input id="senha" type="password" placeholder="Senha"/>
+        <input id="senha2" type="password" placeholder="Repita a senha"/>
+        <button onclick="cadastro();">Registrar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="../JS/registro.js"></script>
+
+</html>

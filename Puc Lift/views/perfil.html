@@ -1,0 +1,166 @@
+<html lang="pt-br">
+<html>
+    <head>
+      <link href="../style/styleH.css" rel="stylesheet">
+    <title>Perfil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Adicionando Javascript -->
+    <script>
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('rua').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('uf').value=("");
+            document.getElementById('ibge').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('rua').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+            document.getElementById('ibge').value=(conteudo.ibge);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('uf').value="...";
+                document.getElementById('ibge').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container-logo">
+      <div class="logo-imagem"></div>
+        <a href="../views/home.html"><img src="../pics/logo5050.png" alt="Logo"></a>
+      </div>
+    </div>
+
+
+    <div class="menu">
+      <ul>
+        <li><a href="../views/home.html">Voltar</a></li>
+      </ul>
+    </div>
+</header>
+<center><h1>Detalhes do usuario</h1></center>
+</br>
+</br>
+<div class="container">
+    <h3 style="padding-left: 70px;"> Nome: <span id="detalheNome"></span></h3> 
+    <script>
+      const nome = localStorage.getItem('teste2@teste-nome');
+      document.getElementById("detalheNome").innerHTML=nome;
+    </script>
+
+    <!-- <p>E-mail: <span id="detalheEmail"></span></p> 
+    <script>
+       const email = localStorage.getItem('teste2@teste-email');
+       document.getElementById("detalheEmail").innerHTML=email;
+    </script> -->
+</div>
+</br>
+</br>
+</br>
+</br>
+<!-- Inicio do formulario -->
+<center>
+<h2>Descubra seu local por meio do cep:</h2>
+</center>
+</br>
+</br>
+<center>
+<!-- Inicio do formulario -->
+<form method="get" action=".">
+  <label>Cep:
+  <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+         onblur="pesquisacep(this.value);" /></label><br />
+  </br>
+  <label>Rua:
+  <input name="rua" type="text" id="rua" size="60" /></label><br />
+</br>
+  <label>Bairro:
+  <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+</br>
+  <label>Cidade:
+  <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+</br>
+  <label>Estado:
+  <input name="uf" type="text" id="uf" size="2" /></label><br />
+</br>
+  <label>IBGE:
+  <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+</form>
+</center>
+</br>
+</br>
+</br>
+<main class="main">
+   <section class="description1">
+      <center> <h2>Local da Puc</h2> </center>
+   </section>
+   <center>
+   <section class="description2">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2227.8548111023174!2d-43.91970255714139!3d-19.85928377419804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69ac3c5437e8f%3A0xaf89be1db1ea54e6!2sPUC%20Minas%20S%C3%A3o%20Gabriel!5e0!3m2!1spt-BR!2sbr!4v1654656668847!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRU_3YwrAcN9JTC9l3hx4MUetyD746w2A&callback=initMap"></script>
+   </section>
+   </center>
+</main>
+
+</body>
+
+<script src="../js/perfil.js"></script>
+
+</html>
